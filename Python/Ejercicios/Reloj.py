@@ -25,10 +25,8 @@ while True:
     time.sleep(1)
     system("cls")
     horaActualizada = time.localtime()
-    hora = horaActualizada.tm_hour
-    minutos = horaActualizada.tm_min
-    segundos = horaActualizada.tm_sec
-    
+    hora,minutos,segundos = horaActualizada.tm_hour, horaActualizada.tm_min, horaActualizada.tm_sec
+
     print(f"0{hora}:0{minutos}:0{segundos}" if segundos < 10 and minutos < 10 and hora < 10 else f"0{hora}:0{minutos}:{segundos}" if minutos < 10 and hora < 10 else f"{hora}:{minutos}:{segundos}")
 
 
