@@ -51,7 +51,7 @@ print(f"{cesart.nombre}")
 
 
 
-# Ejemplo 2, instanciando clase Persona2 con valores recibidos desde un input
+# Ejemplo 2: instanciando clase Persona2 con valores recibidos desde un input
 
 # Definimos la clase Persona2
 class Persona2: 
@@ -79,4 +79,61 @@ while respuesta == "si":
     usuarioInfo = Persona2(minombre, miPais, miProfesion)
     print( usuarioInfo.miFuncion() )
     
-    respuesta = input("\nPara continuar escribe si: ")
+    respuesta = input("\nPara continuar escribe si: ")  
+
+
+
+# Ejemplo 3: Calculadora
+
+class Calculadora:
+    def __init__(self):
+        pass
+
+    def sumar(self):
+        system("cls")
+        print(f"*** Calculadora En Python - Sumar ***")
+        numero1, numero2 = int(input("Ingrese el primer numero: ")), int(input("Ingrese el segundo numero: "))
+        print(f"\nTotal: {numero1 + numero2}")
+    
+    def restar(self):
+        system("cls")
+        print(f"*** Calculadora En Python - Restar ***")
+        numero1, numero2 = int(input("Ingrese el primer numero: ")), int(input("Ingrese el segundo numero: "))
+        print(f"\nTotal: {numero1 - numero2}")
+    
+    def multiplicar(self):
+        system("cls")
+        print(f"*** Calculadora En Python - Multiplicar ***")
+        numero1, numero2 = int(input("Ingrese el primer numero: ")), int(input("Ingrese el segundo numero: "))
+        print(f"\nTotal: {numero1 * numero2}")
+    
+    def dividir(self):
+        system("cls")
+        print(f"*** Calculadora En Python - Dividir ***")
+        numero1, numero2 = int(input("Ingrese el primer numero: ")), int(input("Ingrese el segundo numero: "))
+        print(f"\nTotal: {numero1 / numero2}")
+
+
+miCalculadora = Calculadora()
+
+# Solicitamos al usuario que ingrese una opcion.
+
+system("cls")
+opcion = input("Ingrese una opcion\n1) Sumar\n2) Restar\n3) Multiplicar\n4) Dividir\nOtro) Salir\nOpcion: ")
+
+while (opcion == "1" or opcion == "2" or opcion == "3" or opcion == "4"):
+    if(opcion == "1"):
+        miCalculadora.sumar()
+        opcion = input("Ingrese una opcion\n1) Sumar\n2) Restar\n3) Multiplicar\n4) Dividir\nOtro) Salir\nOpcion: ")
+    elif(opcion == "2"):
+        miCalculadora.restar()
+        opcion = input("Ingrese una opcion\n1) Sumar\n2) Restar\n3) Multiplicar\n4) Dividir\nOtro) Salir\nOpcion: ")
+    elif(opcion == "3"):
+        miCalculadora.multiplicar()
+        opcion = input("Ingrese una opcion\n1) Sumar\n2) Restar\n3) Multiplicar\n4) Dividir\nOtro) Salir\nOpcion: ")
+    elif(opcion == "4"):
+        miCalculadora.dividir()
+        opcion = input("Ingrese una opcion\n1) Sumar\n2) Restar\n3) Multiplicar\n4) Dividir\nOtro) Salir\nOpcion: ")
+    else:
+        system("cls")
+        print("Gracias por usar esta APP")
