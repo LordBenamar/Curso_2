@@ -39,7 +39,6 @@ print(f"\nremove\n{frutas}")
 
 
 
-
 # index(): devuelve la posición del primer elemento que coincide con el valor dado, como un numero entero.
 posicionDelMango = frutas.index("Mango")
 print(f"\nEl indice del mango es: {posicionDelMango}")
@@ -62,11 +61,13 @@ print(f"\nLos numeros ordenados son: {numeros}")
 
 
 
+
 # Ejemplo 2 de sort()
 letras = ["z","a","h","p","c","r","f"]
 print(f"\nLas letras sin orden son: {letras}")
 letras.sort()
 print(f"\nLas letras en orden son: {letras}")
+
 
 
 
