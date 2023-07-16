@@ -49,7 +49,7 @@
 
         Conjuntos de Caracteres
         []      - Caracteres dentro de los brackets
-        [^ ]    - Caracteres que NO ESTAN dentro de los brackets
+        [^]    - Caracteres que NO ESTAN dentro de los brackets
 
         Grupos
         ( )     - Grupo
@@ -143,9 +143,48 @@ system("cls")
 # Ejemplo 2 findall()
 # Buscar todas las etiquetas HTML en el texto.
 
-texto = "<h1>Titulo</h1><div><p>Parrafo</p><a href='instagram.com/lexpinonline'>Instagram</a></div>"
+texto = "<section><h1>Titulo</h1><div><p>Parrafo</p><a href='instagram.com/lexpinonline'>Instagram</a></div></section>"
 patron = r"<[^>]+>"
 
 
 coincidencias = re.findall(patron, texto)
 print(f"Las etiquetas HTML son: {coincidencias}")
+
+
+
+system("cls")
+
+
+# re.sub(patron, reemplazo, string): Reemplaza todas las coincidencias del patrón en la cadena de texto con
+# otra cadena especificada.
+
+
+# Ejemplo 1:
+texto = "Estamos buscanco con JavaScript las coincidencias y reemplazandolas, JavaScript es genial!."
+patron = r"JavaScript"
+
+
+#------------- re.sub(patron, reemplazo, string_a_evaluar)
+coincidencia = re.sub(patron, "Python", texto)
+
+print(coincidencia)
+
+
+
+
+
+system("cls")
+
+
+
+
+
+# Ejemplo 2:
+texto =  "El caballo verde de Bolivar era muy veloz."
+patron = r"verde"
+
+
+#------------- re.sub(patron, reemplazo, string_a_evaluar)
+coincidencia = re.sub(patron, "Blanco", texto)
+
+print(coincidencia)

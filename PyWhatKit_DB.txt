@@ -1,0 +1,55 @@
+Date: 16/7/2023
+Time: 18:34
+Phone Number: +56934887809
+Message: Este mensaje se esta enviando automaticamente con Python, desde un bot de whatsapp!
+--------------------
+Date: 16/7/2023
+Time: 18:34
+Phone Number: +56934887809
+Message: Este mensaje se esta enviando automaticamente con Python, desde un bot de whatsapp!
+--------------------
+Date: 16/7/2023
+Time: 18:35
+Phone Number: +56934887809
+Message: Este mensaje se esta enviando automaticamente con Python, desde un bot de whatsapp!
+--------------------
+Date: 16/7/2023
+Time: 18:42
+Group ID: FU5pMtD9LyMJ9VDjbpAX0v
+Message: Hola todos!, este mensaje se esta enviando desde un bot con Python!
+--------------------
+Date: 16/7/2023
+Time: 18:43
+Group ID: FU5pMtD9LyMJ9VDjbpAX0v
+Message: Hola todos!, este mensaje se esta enviando desde un bot con Python!
+--------------------
+Date: 16/7/2023
+Time: 18:44
+Group ID: FU5pMtD9LyMJ9VDjbpAX0v
+Message: Hola todos!, este mensaje se esta enviando desde un bot con Python!
+--------------------
+Date: 16/7/2023
+Time: 18:46
+Group ID: FU5pMtD9LyMJ9VDjbpAX0v
+Message: Mensaje enviado desde python
+--------------------
+Date: 16/7/2023
+Time: 18:47
+Group ID: FU5pMtD9LyMJ9VDjbpAX0v
+Message: Mensaje enviado desde python
+--------------------
+Date: 16/7/2023
+Time: 18:48
+Group ID: FU5pMtD9LyMJ9VDjbpAX0v
+Message: Mensaje enviado desde python
+--------------------
+Date: 16/7/2023
+Time: 18:51
+Phone Number: +584124401904
+Message: Este mensaje se esta enviando automaticamente con Python, desde un bot de whatsapp!
+--------------------
+Date: 16/7/2023
+Time: 18:52
+Phone Number: +584247727444
+Message: Este mensaje se esta enviando automaticamente con Python, desde un bot de whatsapp!
+--------------------
