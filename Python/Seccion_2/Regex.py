@@ -19,7 +19,47 @@
 
     - coincidencia = re.search(varRegex, texto)
 
+    
+
+
+
+    Coincidencias Basicas
+        .       - Cualquier Caracter, excepto nueva linea
+        \       - Indica que el siguiente caracter se debe tratar de manera especial o "escaparse".
+        \d      - Cualquier Digitos (0-9)
+        \D      - No es un Digito (0-9)
+        \w      - Caracter de Palabra (a-z, A-Z, 0-9, _)
+        \W      - No es un Caracter de Palabra.
+        \s      - Espacios de cualquier tipo. (espacio, tab, nueva linea)
+        \S      - No es un Espacio, Tab o nueva linea.
+
+        Limites
+        \b      - Limite de Palabra
+        \B      - No es un Limite de Palabra
+        ^       - Inicio de una cadena de texto
+        $       - Final de una cadena de texto
+
+        Cuantificadores:
+        *       - Coincide con 0 o más coincidencias del patrón anterior.
+        +       - Coincide con 1 o más coincidencias del patrón anterior.
+        ?       - Coincide con 0 o 1 ocurrencia del patrón anterior.
+        {3}     - Numero Exacto
+        {3,4}   - Rango de Numeros (Minimo, Maximo)
+        {3,}     - Desde un numero en adelante
+
+        Conjuntos de Caracteres
+        []      - Caracteres dentro de los brackets
+        [^ ]    - Caracteres que NO ESTAN dentro de los brackets
+
+        Grupos
+        ( )     - Grupo
+        |       - Uno u otro
+
 """
+
+
+
+
 
 import re
 from os import system
@@ -67,3 +107,45 @@ coincidencia2 = re.match(patron, telefono2)
 
 print(coincidencia.group())
 print(coincidencia2.group())
+
+
+
+
+
+system("cls")
+
+
+
+# re.findall(patron, string): Encuentra todas las coincidencias del patrón de expresión regular en la cadena de texto y devuelve
+# una lista de todas las coincidencias encontradas.
+
+
+
+
+# Ejemplo 1 findall()
+texto = "Este es un TEXTO de Ejemplo CON Palabras MAYUSCULAS"
+
+# Buscar solo las palabras con mayusculas
+patron = r"\b[A-Z]+\b"
+
+
+
+coincidencias = re.findall(patron, texto)
+print(f"Las palabras con mayuscula son: {coincidencias}")
+
+
+
+
+
+system("cls")
+
+
+# Ejemplo 2 findall()
+# Buscar todas las etiquetas HTML en el texto.
+
+texto = "<h1>Titulo</h1><div><p>Parrafo</p><a href='instagram.com/lexpinonline'>Instagram</a></div>"
+patron = r"<[^>]+>"
+
+
+coincidencias = re.findall(patron, texto)
+print(f"Las etiquetas HTML son: {coincidencias}")
