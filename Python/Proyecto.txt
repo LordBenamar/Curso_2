@@ -13,7 +13,7 @@ Crea un sofftware en Python que cumpla las siguientes funciones:
             - Debe solicitiarse los siguientes datos: nombre, apellido, email, edad, pais, genero y  telefono.
             - Los datos solo se podran registrar si pasan una validacion con Regex.
             - Los usuarios registrados se deben guardar en un archivo .txt para poder verlos cada cuando se ejecute el software.
-            - El profesor debe recibir un mensaje al whatsapp luego de cada registro con el siguiente formato:
+            - El profesor debe recibir un mensaje al Whatsapp luego de cada registro con el siguiente formato:
                "Se registro el usuario: {nombre} {apellido}, de {edad} años de edad, residenciado en {pais} y titular del correo: {email} / Software de {NombreDeAlumno}"
     
 2 - Visualizar usuarios:
