@@ -19,11 +19,10 @@ Crea un sofftware en Python que cumpla las siguientes funciones:
     2 - Visualizar usuarios:
             - Se deben poder ver todos los usuarios registrados.
 
-    Opcional:
+    Opcional (No es requerido):
         3 - Editar usuario (por Email)
         4 - Eliminar usuario (por Email)
 
     Extras:
         - El usuario debe recibir un correo electronico de bienvenida luego de registrarse.
-        - Crea una interfaz visual. (TKINTER - https://docs.python.org/es/3/library/tkinter.html)
-        
+        - Si deseas darle una GUI (Interfaz grafia de usuario) a tu proyecto, usa TKINTER. (Documentacion: https://docs.python.org/es/3/library/tkinter.html)
