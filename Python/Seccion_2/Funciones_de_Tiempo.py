@@ -9,10 +9,10 @@ print("Hola, estamos aprendiendo que son funciones de tiempo, con Python, en Lex
 # Es útil para crear retrasos o introducir pausas en el flujo del programa.
 
 # Ejemplo de uso:
-# time.sleep(5) 
-# print("Este mensaje se esta mostrando luego de transcurrir 5 segundos")
-# time.sleep(5) 
-# print("Este mensaje se esta mostrando luego de transcurrir 5 segundos mas")
+time.sleep(5) 
+print("Este mensaje se esta mostrando luego de transcurrir 5 segundos")
+time.sleep(5) 
+print("Este mensaje se esta mostrando luego de transcurrir 5 segundos mas")
 
 
 
@@ -41,7 +41,7 @@ print(f"El segundo actual es: {tiempoActual.tm_sec}")
 
 
 
-system("cls")
+# system("cls")
 
 
 

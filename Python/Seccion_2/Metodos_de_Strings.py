@@ -9,14 +9,15 @@ print(f"La longitud de la cadena de texto 1 es: { len(cadenaDeTexto1) }")
 print(f"La longitud de la cadena de texto 2 es: { len(' lorem ipsum otra cosa ') }")
 
 
+
 from os import system
 system("cls") # Limpia la consola del texto previamente impreso.
 
 
 
-# count(): Cuenta el número de ocurrencias de una subcadena en una cadena.
+# count(): Cuenta el número de concurrencias de una subcadena en una cadena.
 
-cadenaDeTexto2 = "Esto, ok, es una cadena de texto, ok, que contiene un mensaje."
+cadenaDeTexto2 = "Esto, ok, es una cadena de texto, ok, que contiene un mensaje, ok."
 
 print(f"La oracion es: { cadenaDeTexto2 }")
 print(f"La palabra ok aparece: { cadenaDeTexto2.count('ok') } veces")
@@ -112,7 +113,6 @@ print(listaDePalabras[7])
 
 
 
-
 system("cls")
 
 
@@ -123,6 +123,15 @@ system("cls")
 texto = "---Hola Mundo-----------"
 print(f"La cadena original es: {texto}")
 print(f"Ahora la cadena es: {texto.strip('-')}\n\n") 
+
+
+
+
+
+
+system("cls")
+
+
 
 
 
@@ -144,7 +153,7 @@ print(f"La nueva cadena es: {nuevaCadena}")
 
 
 
-system("cls")
+# system("cls")
 
 
 

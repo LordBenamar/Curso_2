@@ -4,6 +4,9 @@
     con claves, que pueden ser de cualquier tipo inmutable como cadenas de texto o números.
 """
 
+from os import system
+
+
 persona = {
     "Nombre": "Mario", 
     "Ciudad": "Barquisimeto", 
@@ -21,17 +24,26 @@ Edad = persona.get("Edad")
 print(f"get\nNombre: {Nombre}\nCiudad: {Ciudad}\nEdad: {Edad}")
 
 
+system("cls")
 
 
-# setdefault(key/propiedad): devuelve el valor asociado a la clave dada, o agrega 
-# la clave y un valor predeterminado si la clave/propiedad no existe en el diccionario.
+
+# setdefault(key/propiedad): devuelve el valor asociado a la propiedad indicada, o agrega 
+# la propiedad y un valor predeterminado si la propiedad no existe en el diccionario.
 
 
 # Observamos el objeto antes de ser modificado 
 print(f"\n{persona}")
 
+
+# Mostramos una propiedad en caso de que exista
+print(persona.setdefault("Nombre","mario@gmail.com")) # Mario
+
+
 # Modificamos el objeto (Añadimos nueva propiedad)
-persona.setdefault("Correo","mario@gmail.com")
+persona.setdefault("Correo","mario@gmail.com") # Se añade la propiedad "Correo"
+
+
 
 # Observamos el objeto despues de ser modificado 
 print(f"\n{persona}")
@@ -61,33 +73,46 @@ print(f"\nLos items son: {listaPersona}")
 
 listaPersona = list(listaPersona)
 print(f"\nLa lista formateada es: {listaPersona}")
-print(f"El indice 1 es:{listaPersona[1]}")
-print(f"El indice 3 es:{listaPersona[3]}")
+print(f"El indice 1 es: {listaPersona[1]}")
+print(f"El indice 2 es: {listaPersona[2]}")
+print(f"El indice 3 es: {listaPersona[3]}")
+
+
+# Se pueden visualizar a modo de matriz, de manera que podemos acceder a los 
+# valores de las tuplas en un determinado indice.
+print(f"\nEl valor del indice 3 es: {listaPersona[3][1]}")
 
 
 
 
-system("cls")
+# system("cls")
 
 
 
 
 
 # keys(): devuelve una vista iterable de las claves/propiedades en el diccionario/objeto
-propiedadesDelObjeto = persona.keys()
+# propiedadesDelObjeto = persona.keys()
 # print(propiedadesDelObjeto)
 
-propiedadesDelObjeto = list(propiedadesDelObjeto)
-print(f"\n{propiedadesDelObjeto}")
-print(f"El indice 0 de las keys es: {propiedadesDelObjeto[0]}")
-print(f"El indice 2 de las keys es: {propiedadesDelObjeto[2]}")
+# propiedadesDelObjeto = list(propiedadesDelObjeto)
+# print(f"\n{propiedadesDelObjeto}")
+# print(f"El indice 0 de las keys es: {propiedadesDelObjeto[0]}")
+# print(f"El indice 2 de las keys es: {propiedadesDelObjeto[2]}")
+
+
+
+
+
+# system("cls")
+
 
 
 
 
 # values(): devuelve una vista iterable de los valores en el diccionario/objeto
 valoresDelObjeto = persona.values()
-# print(valoresDelObjeto)
+print(valoresDelObjeto)
 
 valoresDelObjeto = list(persona.values())
 print(f"\n{valoresDelObjeto}")
@@ -97,7 +122,7 @@ print(f"El indice 2 de los values es: {valoresDelObjeto[2]}")
 
 
 
-system("cls")
+# system("cls")
 
 
 # pop(key/propiedad): elimina la clave dada y devuelve el valor asociado a ella, o un valor 
@@ -135,7 +160,7 @@ print(f"objeto actualizado nuevamente es: {persona}")
 
 
 
-system("cls")
+# system("cls")
 
 
 

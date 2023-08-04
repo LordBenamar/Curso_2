@@ -24,6 +24,7 @@
 def saludar():
     print("Hola Mundo!")
 
+
 # saludar()
 
 
@@ -82,9 +83,6 @@ saludo("Cesar", "Lozano")
 
 
 
-
-
-
 # Ejemplo 3
 # Funciones anonimas/Lambda
 """
@@ -96,7 +94,7 @@ realizar operaciones simples.
 # En JavaSCript encontramos las funciones anonimas y funciones de flechas.
 
 - Las funciones anonimas (en JavaSCript) se pueden definir del a siguiente manera:
-    const miFuncionAnonima = function saludar(){ console.log("Hola Mundo!"); }
+    const miFuncionAnonima = function (){ console.log("Hola Mundo!"); }
 
 - Las funciones de flecha (en JavaSCript) se pueden definir del a siguiente manera:
     const saludar = () => { console.log("Hola Mundo!"); }
@@ -109,12 +107,13 @@ La sintaxis básica de una función lambda es:
 nombre = lambda argumentos : expresión
 """
 
+
 miFuncionLambda = lambda parametro: parametro * 2
 
 
-print(f"El total de la operacion es: {miFuncionLambda(5)} ")
-print(f"El total de la operacion es: {miFuncionLambda(10)} ")
-print(f"El total de la operacion es: {miFuncionLambda(15)} ")
+print(f"El total de la operacion es: { miFuncionLambda(5) } ")
+print(f"El total de la operacion es: { miFuncionLambda(10) } ")
+print(f"El total de la operacion es: { miFuncionLambda(15) } ")
 
 
 #NOTA: Las funciones lambda son especialmente útiles cuando se utilizan como argumentos de otras funciones 
@@ -236,6 +235,8 @@ totalDeSumas = reduce(sumaReduce, listaDeNumeros)
 print(f"La lista Original es: {listaDeNumeros}")
 print(f"El resultado de la suma acumulativa es: {totalDeSumas}")
 
+
+# listaDeNumeros = [1,2,3,4,5,6,7,8,9,10]
 # Como se llego al resultado total
 # 1 + 2 = 3
 # 3 + 3 = 6
@@ -246,3 +247,20 @@ print(f"El resultado de la suma acumulativa es: {totalDeSumas}")
 # 28 + 8 = 36
 # 36 + 9 = 45
 # 45 + 10 = 55
+
+
+
+
+
+
+system("cls")
+
+
+
+
+
+# Ejemplo 2 recorrer una lista de numeros con un valor inicial para la sumatoria
+totalDeSumas2 = reduce(sumaReduce, listaDeNumeros, 969)
+# Mostramos el resultado
+print(f"La lista Original es: {listaDeNumeros}")
+print(f"El resultado de la suma acumulativa es iniciando con 969: {totalDeSumas2}")
