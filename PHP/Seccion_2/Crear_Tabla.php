@@ -22,7 +22,7 @@
             apellido VARCHAR(50),
             edad INT(2),
             email VARCHAR(255) NOT NULL UNIQUE,
-            telefono INT(20) UNIQUE,
+            telefono BIGINT(20) UNIQUE,
             clave VARCHAR(255) NOT NULL,
             registrado TIMESTAMP
         )";
