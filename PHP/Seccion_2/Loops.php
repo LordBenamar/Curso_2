@@ -7,6 +7,12 @@
     </head>
     <body>
         <h1>Loops</h1>
+        <!-- Aqui vamos a probar el valor de la COOKIE que recien creamos -->
+        <?php
+            if(isset($_COOKIE["usuario1"])){
+                echo "<p>Bienvenido: ".$_COOKIE["usuario1"]."</p>";
+            }
+        ?>
 
         <p>
             <?php 
