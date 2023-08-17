@@ -6,6 +6,9 @@
         <title>Registrar usuario</title>
     </head>
     <body>
+        <?php 
+            include "../../Componentes/NavBar.php"; 
+        ?>
         <h1>Registrar usuario</h1>
         <?php
             // Capturamos la informacion del formulario que viaja a traves del metodo POST

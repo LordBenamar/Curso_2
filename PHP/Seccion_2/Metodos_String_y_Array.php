@@ -36,7 +36,7 @@
 
             // Este metodo lo usaremos mas adelante con un metodo de Array.
             $arrayDeStrings = explode(" ", $cadena); // Divide un string en un array.
-            echo var_dump($arrayDeStrings);
+            echo var_dump($arrayDeStrings); // Muestra informacion acerca de una variable.
             echo implode(" ", $arrayDeStrings); // Unifica un array en un string.
         ?>
 
@@ -51,16 +51,18 @@
             echo "El array 2 es: ".implode(", ",$frutas2)."<br><br>";
 
             $totalElementos = count($frutas); // Cuenta el número de elementos en el array
-            echo "El total de frutas en el array es: $totalElementos <br>";
+            echo "El total de frutas en el array 1 es: $totalElementos <br>";
+            $totalElementos2 = count($frutas2);
+            echo "El total de frutas en el array 2 es: $totalElementos2 <br>";
 
             $primerElemento = reset($frutas); // Obtiene el primer elemento del array.
-            echo "La primera fruta del array es: $primerElemento <br>";
+            echo "La primera fruta del array 1 es: $primerElemento <br>";
             
             $ultimoElemento = end($frutas); // Obtiene el último elemento del array.
-            echo "La ultima fruta del array es: $ultimoElemento <br>";
+            echo "La ultima fruta del array 1 es: $ultimoElemento <br>";
 
             $existeElElemento = in_array("pera", $frutas); // Verifica si un elemento existe en el array, retorna true o false.
-            echo "¿La fruta pera existe en el array?: ";
+            echo "¿La fruta pera existe en el array 1?: ";
             echo ($existeElElemento) ? "Sí" : "No";
 
             $arrayInvertido = array_reverse($frutas); // Revierte el orden de los elementos en el array

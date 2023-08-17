@@ -8,6 +8,9 @@
         <title>Usuarios Registrados</title>
     </head>
     <body class="bg-gradient-to-r from-green-400 to-green-800 pt-10">
+        <?php 
+            include "../../Componentes/NavBar.php"; 
+        ?>
         <h1 class="text-center text-2xl font-bold">Usuarios Registrados</h1>
         <!-- En este div se van a cargar todos los usuarios registrados en la base de datos -->
         <div class="container mx-auto py-8">

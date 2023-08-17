@@ -6,6 +6,9 @@
         <title>Actualizar Usuario</title>
     </head>
     <body>
+        <?php 
+            include "../../Componentes/NavBar.php"; 
+        ?>
         <h3>Actualizar Usuario</h3>
         <?php
 

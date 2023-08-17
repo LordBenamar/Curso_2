@@ -38,5 +38,5 @@
     // Borrar una COOKIE
     // Para borrar una cookie, debes establecerla con un tiempo de expiración en el pasado.
     // setcookie(nombre, valor, tiempo de vida en el pasado, carpeta);
-    setcookie("usuario1", "", time() - 1, "/");
+    // setcookie("usuario1", "", time() - 1, "/");
 ?>

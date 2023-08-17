@@ -16,8 +16,8 @@
         ?>
 
         <form action="Login_Back.php" method="POST">
-            <input type="text" name="correo" placeholder="Correo"><br>
-            <input type="password" name="clave" placeholder="Contraseña"><br>
+            <input type="text" name="correo" placeholder="Correo" pattern="\w+@\w+\.\w{2,3}" required><br>
+            <input type="password" name="clave" placeholder="Contraseña" required><br>
 
             <input type="submit" value="Iniciar Sesión">
         </form>

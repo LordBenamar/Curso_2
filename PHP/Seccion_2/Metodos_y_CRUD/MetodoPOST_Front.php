@@ -6,6 +6,9 @@
         <title>Registrar usuario</title>
     </head>
     <body>
+        <?php 
+            include "../../Componentes/NavBar.php"; 
+        ?>
         <h1>Registrar usuario</h1>
         <form action="./MetodoPOST_Back.php" method="POST">
             <label for="nombre">Nombre</label>

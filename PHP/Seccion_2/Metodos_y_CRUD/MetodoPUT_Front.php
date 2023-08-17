@@ -7,6 +7,9 @@
         <title>Actuaizar Correo</title>
     </head>
     <body>
+        <?php 
+            include "../../Componentes/NavBar.php"; 
+        ?>
         <h2>Actualizar Correo</h2>
 
         <form method="POST" action="./MetodoPUT_Back.php">

@@ -36,10 +36,10 @@
 
 
 
-        <p>
+        <div>
             <?php
                 // Switch-Case
-                $color = "azul";
+                $color = "rojo";
                 switch($color){
                     case "azul":
                         echo("<h1>El color es azul</h1>");
@@ -54,7 +54,7 @@
                         echo("Selecciona un color valido");
                 }
             ?>
-        </p>
+        </div>
 
     </body>
 </html>

@@ -1,12 +1,13 @@
 <?php
-    // Definimos las variables de conexion.
-    $host = "localhost";
-    $usuario = "root";
-    $clave = "";
-    $baseDeDatos = "bd_grupo_8";
 
-    // Creamos una instancia de la clase mysqli.
-    $conexion = new mysqli($host, $usuario, $clave, $baseDeDatos);
+    // Llamamos al componente de barra de navegacion usando include.
+    // Si el componente no se encuentre solo se vera un warning.
+    include "../../Componentes/NavBar.php";
+    
+    
+    // Se utiliza require para importar la conexion ya que es un archivo vital para el funcionamiento de la pagina.
+    // Si el archivo no se encuentra se detendra el funcionamiento de la pagina.
+    require "../Conexionn.php";
 
     // Comprobamos la conexion.
     if ($conexion->connect_error) { // Si la conexion falla por alguna razon
@@ -39,19 +40,21 @@
             echo "<p>Usuario eliminado correctamente</p>";
 
             // Redireccionamos a la pagina para eliminar usuarios despues de 5 segundos
-            header("Refresh:5; url=./MetodoDELETE_Front.php");
+            // header("Refresh:5; url=./MetodoDELETE_Front.php");
             }else{
                 echo "<p>Error al eliminar el usuario</p>".$conexion->error;
                 
                 // Redireccionamos a la pagina para eliminar usuarios despues de 5 segundos
-                header("Refresh:5; url=./MetodoDELETE_Front.php");
+                // header("Refresh:5; url=./MetodoDELETE_Front.php");
             }
         }else{
             echo "<p>El usuario no existe</p>";
             // Redireccionamos a la pagina para eliminar usuarios despues de 5 segundos
-            header("Refresh:5; url=./MetodoDELETE_Front.php");
+            // header("Refresh:5; url=./MetodoDELETE_Front.php");
         }
         
         $conexion->close(); // Cerramos la conexion
     };
 ?>
+
+<h1>Seccion 2</h1>

@@ -7,6 +7,9 @@
         <title>Eliminar Usuario</title>
     </head>
     <body>
+    <?php 
+        include "../../Componentes/NavBar.php"; 
+    ?>
     <h3>Eliminar mediante correo</h3>
         <form method="POST" action="./MetodoDELETE_Back.php">
             <label for="email">Email del usuario a Eliminar:</label>
