@@ -14,7 +14,6 @@ Ademas debe permitir:
 
 Estructuras de las tablas:
 - Productos: ID (llave primaria y autoincremental), Nombre, Descripcion, Precio, Colores, Stock, Precio con Descuento, Etiqueta de creado
-
 - Usuarios: ID (llave primaria y autoincremental), Nombre, Apellido, Email, Password (Con Hash), Etiqueta de registrado
 
 
